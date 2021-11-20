@@ -34,3 +34,11 @@
 ## Use Case Diagrams
 
 ![Use Case](https://user-images.githubusercontent.com/91459125/142714373-903eea81-8f9d-4c6d-9098-9a4a64c25a68.jpg)
+
+### Cara Instalasi
+
+1. Clone Project
+2. Masuk Folder hasil Clone tadi dan Rename .env.example menjadi .env
+3. Edit file .env mulai dari DB_CONNECTION sampai DB_PASSWORD sesuai dengan database yg digunakan, tambahkan FILESYSTEM_DRIVER=public ke baris paling bawah file .env
+4. Buka terminal dan pastikan sudah mengarah ke folder majoo-app, ketik php artisan migrate:fresh --seed, jika prosesnya sudah selesai, ketik php artisan storage:link
+5. Jika step 4 sudah selesai, jalankan program dengan perintah php artisan serve
