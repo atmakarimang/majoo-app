@@ -8,9 +8,11 @@
 
 ## Data Manipulation Language
 
-1. Insert Product Category
-
 INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES ('', 'Phones', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+UPDATE `categories` SET `name` = 'HeadPhones' WHERE `categories`.`id` = 4;
+
+DELETE FROM `categories` WHERE `categories`.`id` = 4
 
 ## Activity Diagrams
 
