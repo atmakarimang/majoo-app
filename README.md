@@ -8,6 +8,9 @@
 
 ## Data Manipulation Language
 
+1. Insert Product Category
+
+INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`) VALUES ('', 'Phones', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
 
 ## Activity Diagrams
 
