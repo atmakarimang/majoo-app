@@ -42,3 +42,6 @@
 3. Edit file .env mulai dari DB_CONNECTION sampai DB_PASSWORD sesuai dengan database yg digunakan, tambahkan FILESYSTEM_DRIVER=public ke baris paling bawah file .env
 4. Buka terminal dan pastikan sudah mengarah ke folder majoo-app, ketik php artisan migrate:fresh --seed, jika prosesnya sudah selesai, ketik php artisan storage:link
 5. Jika step 4 sudah selesai, jalankan program dengan perintah php artisan serve
+
+*berikut untuk file .sql nya jika diperlukan : [db-majoo.zip](https://github.com/atmakarimang/majoo-app/files/7573977/db-majoo.zip)
+
