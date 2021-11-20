@@ -1,5 +1,7 @@
 # Majoo App
 
+![Majoo Indonesia](https://user-images.githubusercontent.com/91459125/142714473-e2370762-eba2-4faa-bed0-f99970e7d7a9.png)
+
 ## Entity Relationship Diagram (ERD)
 
 ![ERD](https://user-images.githubusercontent.com/91459125/142714174-418830ba-37a7-42c4-bc07-90564c487132.jpg)
