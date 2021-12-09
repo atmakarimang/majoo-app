@@ -7,6 +7,7 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\CloudinaryStorage;
 
 class DashboardProductController extends Controller
 {
@@ -51,8 +52,12 @@ class DashboardProductController extends Controller
         ]);
 
         if ($request->file('image')) {
-            $validateData['image'] = $request->file('image')->store('product-image');
+            //$validateData['image'] = $request->file('image')->store('product-image');
+            $image  = $request->file('image');
+            $validateData['image'] = CloudinaryStorage::upload($image->getRealPath(), $image->getClientOriginalName());
         }
+
+        //Image::create(['image' => $result]);
 
         Product::create($validateData);
         return redirect('/dashboard/product')->with('success', 'New post has been added!');

@@ -7,7 +7,7 @@
             <div class="col-md-3 mb-3">  
                 <div class="card h-100">  
                     <div class="d-flex justify-content-center p-3">   
-                      <img src="{{ asset('storage/' . $product->image) }}">
+                      <img src="{{ $product->image }}">
                     </div>
                     <div class="card-body">
                       <h6 class="card-title text-center">{{ $product->product_name }}</h6> 

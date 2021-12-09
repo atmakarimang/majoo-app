@@ -31,8 +31,16 @@
                 <td class="text-center">{{ $product->product_name }}</td> 
                 <td>{!! $product->description !!}</td>  
                 <td><b>{{ number_format($product->price,0) }}</b></td>  
-                <td class="text-center">{{ $product->category->name }}</td>    
-                <td><img src="{{ asset('storage/' . $product->image) }}" class=""></td>  
+                <td class="text-center">
+                @php
+                  if(!isset($product->category->name)){
+                    echo "Kosong";
+                  }else {
+                    echo $product->category->name;
+                  }  
+                @endphp
+                </td>     
+                <td><img src="{{ $product->image }}" class=""></td>  
               </tr>
             @endforeach  
           </tbody>
